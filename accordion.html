@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Accordion / FAQ - Simple HTML, CSS & JS</title>
+  <link rel="stylesheet" href="accordion.css">
+</head>
+<body>
+
+  <!-- Top Hub Navigation -->
+  <div class="demo-topbar">
+    <a href="index.html" class="back-link">&larr; Back to Components Menu</a>
+    <span class="badge">Accordion Demo</span>
+  </div>
+
+  <main class="page-container">
+    <div class="intro-box">
+      <h1>Frequently Asked Questions</h1>
+      <p>Clean, accessible accordion panels with smooth slide animations and single-active toggle option.</p>
+    </div>
+
+    <!-- Mode Selector: Single open vs Multi open -->
+    <div class="accordion-toolbar">
+      <label class="toggle-label">
+        <input type="checkbox" id="singleModeCheckbox" checked>
+        <span>Allow only one open section at a time</span>
+      </label>
+    </div>
+
+    <!-- ================= ACCORDION START ================= -->
+    <div class="accordion" id="accordion">
+
+      <!-- Item 1 -->
+      <div class="accordion-item active">
+        <button class="accordion-header" aria-expanded="true">
+          <span class="header-title">What is this component library?</span>
+          <span class="chevron">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            This is a clean, dependency-free template library providing individual pages for common web UI components such as Navbar, Sidebar, Slider, Modal, and Accordion built with modern HTML5, CSS3, and Vanilla JavaScript.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="header-title">How do I reuse these components in my project?</span>
+          <span class="chevron">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            Each component has its own dedicated HTML, CSS, and JS files. To use any component, simply copy its corresponding HTML markup, paste the CSS rules into your stylesheet, and include the small JavaScript snippet.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="header-title">Are external libraries or frameworks required?</span>
+          <span class="chevron">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            No! Everything is built using standard Vanilla JavaScript, pure CSS, and semantic HTML. No React, jQuery, Bootstrap, or Tailwind is required, making the code extremely fast and easy to understand.
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false">
+          <span class="header-title">Is it mobile-friendly and responsive?</span>
+          <span class="chevron">&#9662;</span>
+        </button>
+        <div class="accordion-content">
+          <div class="content-inner">
+            Yes, all components are built mobile-first and fluidly adapt to screens of any size, from small smartphones to large desktop displays.
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- ================= ACCORDION END ================= -->
+
+  </main>
+
+  <script src="accordion.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Components Library - HTML, CSS & JS Templates</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <header class="top-banner">
+    <div class="banner-content">
+      <span class="sparkle">&#10024;</span>
+      <span>Simple, Modular & Responsive UI Templates in Pure HTML, CSS & JavaScript</span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">Frontend UI Components</h1>
+      <p class="hero-subtitle">Each component has its own dedicated page with simple, clean, and well-commented HTML, CSS, and JS files.</p>
+      
+      <!-- Search Filter Bar -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search components (e.g. navbar, sidebar, slider, modal)..." autocomplete="off">
+        <span class="search-icon">&#128269;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Components Grid -->
+  <main class="container main-content">
+    <div class="grid" id="componentsGrid">
+
+      <!-- 1. NAVBAR CARD -->
+      <article class="component-card" data-tags="navbar menu navigation header dropdown mobile hamburger">
+        <div class="card-badge">Navigation</div>
+        <div class="card-icon-wrapper nav-icon-bg">
+          <span class="card-icon">&#128506;&#65039;</span>
+        </div>
+        <h2 class="card-title">Responsive Navbar</h2>
+        <p class="card-desc">Modern desktop & mobile navigation bar with dropdown submenu, CTA button, and animated hamburger toggle.</p>
+        
+        <ul class="features-list">
+          <li>&#10003; Mobile slide-down menu</li>
+          <li>&#10003; Desktop hover & mobile click dropdown</li>
+          <li>&#10003; Sticky positioning with shadow</li>
+        </ul>
+
+        <div class="files-tag-row">
+          <span class="file-tag">navbar.html</span>
+          <span class="file-tag">navbar.css</span>
+          <span class="file-tag">navbar.js</span>
+        </div>
+
+        <a href="navbar.html" class="btn-open-page">
+          <span>Open Navbar Page</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </article>
+
+      <!-- 2. SIDEBAR CARD -->
+      <article class="component-card" data-tags="sidebar drawer menu admin navigation panel collapse">
+        <div class="card-badge">Layout</div>
+        <div class="card-icon-wrapper sidebar-icon-bg">
+          <span class="card-icon">&#128203;</span>
+        </div>
+        <h2 class="card-title">Collapsible Sidebar</h2>
+        <p class="card-desc">Slide-in drawer sidebar with user profile, icons, collapsible submenus, and mobile backdrop overlay.</p>
+        
+        <ul class="features-list">
+          <li>&#10003; Smooth slide-in/out drawer animation</li>
+          <li>&#10003; Backdrop overlay & ESC key closing</li>
+          <li>&#10003; Collapsible project submenu</li>
+        </ul>
+
+        <div class="files-tag-row">
+          <span class="file-tag">sidebar.html</span>
+          <span class="file-tag">sidebar.css</span>
+          <span class="file-tag">sidebar.js</span>
+        </div>
+
+        <a href="sidebar.html" class="btn-open-page">
+          <span>Open Sidebar Page</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </article>
+
+      <!-- 3. SLIDER CARD -->
+      <article class="component-card" data-tags="slider carousel image gallery swipe controls dots autoplay">
+        <div class="card-badge">Media</div>
+        <div class="card-icon-wrapper slider-icon-bg">
+          <span class="card-icon">&#128444;&#65039;</span>
+        </div>
+        <h2 class="card-title">Image Slider / Carousel</h2>
+        <p class="card-desc">Interactive image carousel with next/prev buttons, slide counter, clickable dots, and pause-on-hover autoplay.</p>
+        
+        <ul class="features-list">
+          <li>&#10003; Next/Prev buttons & arrow key support</li>
+          <li>&#10003; Dynamic pagination dots & counter</li>
+          <li>&#10003; Autoplay toggle with pause on hover</li>
+        </ul>
+
+        <div class="files-tag-row">
+          <span class="file-tag">slider.html</span>
+          <span class="file-tag">slider.css</span>
+          <span class="file-tag">slider.js</span>
+        </div>
+
+        <a href="slider.html" class="btn-open-page">
+          <span>Open Slider Page</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </article>
+
+      <!-- 4. MODAL CARD -->
+      <article class="component-card" data-tags="modal popup dialog alert confirm prompt overlay">
+        <div class="card-badge">Overlay</div>
+        <div class="card-icon-wrapper modal-icon-bg">
+          <span class="card-icon">&#128172;</span>
+        </div>
+        <h2 class="card-title">Interactive Modal / Popup</h2>
+        <p class="card-desc">Accessible dialog popups with scale animations, backdrop blur, action handlers, and Escape key listeners.</p>
+        
+        <ul class="features-list">
+          <li>&#10003; Scale-up & fade-in entrance animation</li>
+          <li>&#10003; Background scroll lock & blur overlay</li>
+          <li>&#10003; Standard modal & confirmation dialog</li>
+        </ul>
+
+        <div class="files-tag-row">
+          <span class="file-tag">modal.html</span>
+          <span class="file-tag">modal.css</span>
+          <span class="file-tag">modal.js</span>
+        </div>
+
+        <a href="modal.html" class="btn-open-page">
+          <span>Open Modal Page</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </article>
+
+      <!-- 5. ACCORDION CARD -->
+      <article class="component-card" data-tags="accordion faq collapse expandable toggle dropdown">
+        <div class="card-badge">Content</div>
+        <div class="card-icon-wrapper accordion-icon-bg">
+          <span class="card-icon">&#128221;</span>
+        </div>
+        <h2 class="card-title">Accordion / FAQ</h2>
+        <p class="card-desc">Smooth height-expanding accordion panels with rotating chevrons and single or multi-expand modes.</p>
+        
+        <ul class="features-list">
+          <li>&#10003; Fluid height transition animations</li>
+          <li>&#10003; Option to allow single or multiple open items</li>
+          <li>&#10003; Accessible keyboard and screen-reader ready</li>
+        </ul>
+
+        <div class="files-tag-row">
+          <span class="file-tag">accordion.html</span>
+          <span class="file-tag">accordion.css</span>
+          <span class="file-tag">accordion.js</span>
+        </div>
+
+        <a href="accordion.html" class="btn-open-page">
+          <span>Open Accordion Page</span>
+          <span class="arrow">&rarr;</span>
+        </a>
+      </article>
+
+    </div>
+
+    <!-- No results message for search -->
+    <div class="no-results" id="noResults" style="display: none;">
+      <p>No components found matching your search.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Built with pure HTML, CSS, and Vanilla JavaScript. Zero external dependencies.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

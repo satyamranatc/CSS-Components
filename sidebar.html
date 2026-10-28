@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapsible Sidebar - Simple HTML, CSS & JS</title>
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+
+  <!-- Top Hub Navigation -->
+  <div class="demo-topbar">
+    <a href="index.html" class="back-link">&larr; Back to Components Menu</a>
+    <span class="badge">Sidebar Demo</span>
+  </div>
+
+  <div class="app-container">
+
+    <!-- Backdrop Overlay for Mobile / Drawer mode -->
+    <div class="overlay" id="sidebarOverlay"></div>
+
+    <!-- ================= SIDEBAR START ================= -->
+    <aside class="sidebar" id="sidebar">
+      
+      <!-- Sidebar Header -->
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <span class="logo-icon">&#9881;</span>
+          <span class="logo-text">AdminPanel</span>
+        </div>
+        <button class="close-sidebar-btn" id="closeSidebarBtn" title="Close Sidebar">&times;</button>
+      </div>
+
+      <!-- User Profile Card -->
+      <div class="sidebar-profile">
+        <div class="avatar">SR</div>
+        <div class="profile-info">
+          <span class="profile-name">Satyam Rana</span>
+          <span class="profile-role">Administrator</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="sidebar-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <span class="nav-icon">&#127968;</span>
+              <span class="nav-text">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">&#128202;</span>
+              <span class="nav-text">Analytics</span>
+            </a>
+          </li>
+
+          <!-- Collapsible Submenu -->
+          <li class="nav-item has-submenu" id="projectsMenu">
+            <a href="#" class="nav-link submenu-trigger" id="projectsTrigger">
+              <span class="nav-icon">&#128194;</span>
+              <span class="nav-text">Projects</span>
+              <span class="submenu-arrow">&#9662;</span>
+            </a>
+            <ul class="submenu" id="projectsSubmenu">
+              <li><a href="#" class="submenu-link">Active Tasks</a></li>
+              <li><a href="#" class="submenu-link">Completed</a></li>
+              <li><a href="#" class="submenu-link">New Project +</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">&#9993;</span>
+              <span class="nav-text">Messages</span>
+              <span class="badge-count">3</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">&#9881;</span>
+              <span class="nav-text">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <a href="#" class="logout-link">
+          <span class="nav-icon">&#128682;</span>
+          <span class="nav-text">Sign Out</span>
+        </a>
+      </div>
+
+    </aside>
+    <!-- ================= SIDEBAR END ================= -->
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <header class="content-header">
+        <button class="open-sidebar-btn" id="openSidebarBtn">
+          &#9776; <span>Toggle Sidebar</span>
+        </button>
+        <h2>Dashboard Overview</h2>
+      </header>
+
+      <div class="content-body">
+        <div class="welcome-box">
+          <h1>Collapsible Sidebar Demo</h1>
+          <p>Click the <strong>Toggle Sidebar</strong> button or press the hamburger icon to toggle the sidebar drawer.</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3>&#10003; Smooth Transitions</h3>
+            <p>CSS transforms power silky 60fps sliding animations with zero layout shifting.</p>
+          </div>
+          <div class="card">
+            <h3>&#128241; Responsive Overlay</h3>
+            <p>Includes an automatic dark backdrop on mobile and smaller viewports.</p>
+          </div>
+          <div class="card">
+            <h3>&#128194; Nested Submenu</h3>
+            <p>Supports dropdown accordion sections like the "Projects" item inside.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>

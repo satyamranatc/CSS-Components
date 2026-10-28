@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider / Carousel - Simple HTML, CSS & JS</title>
+  <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+
+  <!-- Top Hub Navigation -->
+  <div class="demo-topbar">
+    <a href="index.html" class="back-link">&larr; Back to Components Menu</a>
+    <span class="badge">Slider Demo</span>
+  </div>
+
+  <div class="page-container">
+    <div class="intro-header">
+      <h1>Interactive Image Slider / Carousel</h1>
+      <p>Features next/previous controls, pagination dots, slide counter, and autoplay with pause-on-hover.</p>
+    </div>
+
+    <!-- ================= SLIDER START ================= -->
+    <div class="slider-wrapper">
+      <div class="carousel" id="carousel">
+
+        <!-- Slides Container Track -->
+        <div class="slides" id="slideTrack">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Mountain Lake">
+            <div class="slide-caption">
+              <h3>Mountain Sunset</h3>
+              <p>Serene lake reflection under twilight sky</p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80" alt="Foggy Forest">
+            <div class="slide-caption">
+              <h3>Misty Forest</h3>
+              <p>Dense morning fog weaving through pine trees</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80" alt="Sunlight in Woods">
+            <div class="slide-caption">
+              <h3>Golden Canopy</h3>
+              <p>Warm sunshine breaking through woodland foliage</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="slide">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80" alt="Tropical Beach">
+            <div class="slide-caption">
+              <h3>Ocean Horizon</h3>
+              <p>Crystal clear turquoise water and sunny shores</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous Slide">&#10094;</button>
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next Slide">&#10095;</button>
+
+        <!-- Slide Counter Indicator -->
+        <div class="slide-counter" id="slideCounter">1 / 4</div>
+
+        <!-- Dot Pagination Indicators -->
+        <div class="dots-container" id="dotsContainer"></div>
+
+      </div>
+
+      <!-- Slider Controls (Autoplay toggle) -->
+      <div class="slider-controls">
+        <button class="control-btn" id="autoplayBtn">&#9646;&#9646; Pause Autoplay</button>
+        <span class="control-hint">Use &larr; and &rarr; arrow keys to navigate</span>
+      </div>
+    </div>
+    <!-- ================= SLIDER END ================= -->
+
+  </div>
+
+  <script src="slider.js"></script>
+</body>
+</html>

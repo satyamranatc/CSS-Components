@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Modal / Popup - Simple HTML, CSS & JS</title>
+  <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+
+  <!-- Top Hub Navigation -->
+  <div class="demo-topbar">
+    <a href="index.html" class="back-link">&larr; Back to Components Menu</a>
+    <span class="badge">Modal Demo</span>
+  </div>
+
+  <main class="page-container">
+    <div class="intro-box">
+      <h1>Interactive Modal Popup</h1>
+      <p>A clean modal dialog with animated popup, backdrop blur, Escape key support, and outside click dismissal.</p>
+      
+      <!-- Open Modal Trigger Buttons -->
+      <div class="button-group">
+        <button class="btn btn-primary" id="openModalBtn">Open Demo Modal</button>
+        <button class="btn btn-danger" id="openConfirmBtn">Open Confirmation Dialog</button>
+      </div>
+    </div>
+
+    <!-- Status Message -->
+    <div class="status-box" id="statusBox">Modal is currently closed.</div>
+  </main>
+
+  <!-- ================= MODAL 1: Standard Modal ================= -->
+  <div class="modal-overlay" id="demoModalOverlay">
+    <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 id="modalTitle">Welcome to DevStudio</h3>
+        <button class="modal-close-btn" id="closeModalBtn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <p>This is a lightweight, responsive modal dialog window built with pure HTML, CSS, and Vanilla JavaScript.</p>
+        <div class="modal-feature-list">
+          <div class="feature-item">
+            <span class="check-icon">&#10003;</span>
+            <span>Smooth scale-up and fade-in animation</span>
+          </div>
+          <div class="feature-item">
+            <span class="check-icon">&#10003;</span>
+            <span>Click outside (overlay) or press <code>Esc</code> to exit</span>
+          </div>
+          <div class="feature-item">
+            <span class="check-icon">&#10003;</span>
+            <span>Accessible layout with proper focus handling</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancelModalBtn">Cancel</button>
+        <button class="btn btn-primary" id="acceptModalBtn">Got it, thanks!</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= MODAL 2: Confirm Delete Dialog ================= -->
+  <div class="modal-overlay" id="confirmModalOverlay">
+    <div class="modal-container modal-small" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <h3>Confirm Action</h3>
+        <button class="modal-close-btn" id="closeConfirmBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to proceed with this action? This operation cannot be undone.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="cancelConfirmBtn">Cancel</button>
+        <button class="btn btn-danger" id="actionConfirmBtn">Delete Forever</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="modal.js"></script>
+</body>
+</html>
